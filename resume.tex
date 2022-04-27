@@ -1,0 +1,174 @@
+\documentclass[]{resume}
+\usepackage{anyfontsize}
+\pagenumbering{gobble}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Cameron}{Lenius}
+\separatorL
+\contactline
+  {Den Haag, Netherlands}
+  {\href{mailto:cameron.lenius@gmail.com}{cameron.lenius@gmail.com}}
+  {+31 6 1385 1158}
+  {\href{cmlenius.github.io}{cmlenius.github.io}}
+\separatorS
+
+\begin{minipage}[t]{0.65\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY STATEMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Results-driven Software Engineer with 5+ years of experience developing backend and full-stack systems while shipping production quality software.
+% Quick learner with proven leadership abilities and strong communication skills
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+\describedsubsection{Zuva AI}
+\descript{| Intermediate Software Developer}
+\location{Sept 2021 – June 2022 | Toronto, Canada}
+\vspace{\topsep} % TODO fix this hack
+\separatorS
+\begin{tightemize}
+\item Started entirely new product through which users can perform supervised machine learning for sequence labelling on legal documents for contract analysis
+\item Participated in product infrastructure design as well as conatinerization (Docker, Kubernetes and Terraform) and delpoyment (Azure, Argo CD)
+\item Implemented Go microservices to facilitate file processing including application of OCR, document classification, training, and S3 cloud object storage
+\item Introduced Role Based Access Control combining Auth0's Management API (Node.js, Typescript) and Hasura's GraphQL permissions
+\end{tightemize}
+\separatorM
+
+\describedsubsection{Kira Systems}
+\descript{| Intermediate Software Developer }
+\location{Aug 2019 – Sept 2021 | Toronto, Canada}
+\separatorS
+\begin{tightemize}
+\item Contributed several important features to Kira's industry-leading Machine Learning based contract analysis product (Go, Clojure, Typescript)
+\item Implemented the Document Viewer, a complex React.js component used to annotate documents for the creation of machine learning training sets
+\item Transitioned machine learning method from offline to online learning removing the need to retrain entire datasets and saving 1000s of hours of computational resources
+\item Created integration service using the Salesforce REST API, unifying product and CRM users while enabling the business to bill clients accurately based on product usage
+\end{tightemize}
+\separatorM
+
+\describedsubsection{University Health Network}
+\descript{| Software Developer }
+\location{Sept 2018 – Aug 2019 | Toronto, Canada}
+\separatorS
+\begin{tightemize}
+\item Created the Morgue Log application (Clojure/ClojureScript), used to notify staff across UHN hospital morgues when bodies require attention
+\item Developed backend JSON-RPC services (Java) granting hospital clinicians centralized access to patient data, reducing discharge wait times by up to 50\%
+\end{tightemize}
+\separatorM
+
+\describedsubsection{Emmetros Limited}
+\descript{| Software Developer }
+\location{Jan 2018 – Apr 2018 | Waterloo, Canada}
+\separatorS
+\begin{tightemize}
+\item Developed core features for iOS app using Swift along with analytics integration enabling the company to track key performance metrics
+\item Tracked and fixed bugs in MEAN stack application
+\end{tightemize}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\describedsubsection{Gloomhaven Card Browser}
+\location{( {\href{https://www.gloomhavencards.com}{www.gloomhavencards.com}} )}
+\separatorS
+\begin{tightemize}
+\item Creator and maintainer of the Gloomhaven Card Browser, a Next.js application used by thousands of players to browse cards from the popular board game Gloomhaven
+\end{tightemize}
+ 
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.3\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{University of Waterloo}
+\descript{Bachelor's in Computer Science}
+\location{Sept 2014 - Aug 2018 | Waterloo, Canada}
+\minor{Minor in Combinatorics and Optimization}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\separatorM
+\section{Skills}
+\subsection{Languages}
+\separatorS
+\skillproficiency{English}{Native}
+\skillproficiency{French}{Conversational}
+\skillproficiency{Dutch}{Beginner}
+\separatorL
+ 
+\subsection{Programming}
+\separatorS
+\skillproficiency{SQL}{Proficient}
+\skillproficiency{Typescript}{Proficient}
+\skillproficiency{Go}{Proficient}
+\skillproficiency{Clojure}{Proficient}
+\skillproficiency{Java}{Proficient}
+\skillproficiency{Swift}{Familiar}
+\skillproficiency{Python}{Familiar}
+\skillproficiency{C/C++}{Familiar}
+\separatorL
+ 
+\subsection{Libraries / Frameworks}
+\separatorS
+\begin{multicols}{2}
+\columnbreak
+\skill{React.js}
+\skill{Node.js}
+\skill{Express.js}
+\skill{Next.js}
+\skill{Reagent}
+\skill{Cypress}
+\columnbreak
+\skill{GraphQL}
+\skill{Argo CD}
+\skill{Auth0 API}
+\skill{Salesforce API}
+\skill{Material-UI}
+\skill{Posthog}
+\end{multicols}
+\separatorL
+ 
+\subsection{Tools / Technologies}
+\separatorS
+\begin{multicols}{2}
+\skill{Git}
+\skill{Docker}
+\skill{Kubernetes}
+\skill{Minkube}
+\skill{Terraform}
+\skill{Tilt}
+\skill{Github Actions}
+\skill{AWS S3}
+\columnbreak
+\skill{Azure}
+\skill{PostgresSQL}
+\skill{MongoDB}
+\skill{Elasticsearch}
+\skill{RabbitMQ}
+\skill{Hasura}
+\skill{OAuth2}
+\skill{OpenID}
+\end{multicols}
+\separatorM
+ 
+\end{minipage} 
+\end{document}  
+\documentclass[]{article}
+
