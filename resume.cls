@@ -88,8 +88,8 @@
 %Contact Line
 \newcommand{\contactline}[4]{\begingroup
 \setbox0=\hbox{
-\includegraphics[scale=0.25,trim={0cm 0.5cm -0.8cm 0cm}]{icons/email.png}{#1}\hspace{0.5cm}
-\includegraphics[scale=0.25,trim={0cm 0.5cm -0.5cm 0cm}]{icons/location.png}{#2}\hspace{0.8cm}
+\includegraphics[scale=0.25,trim={0cm 0.5cm -0.5cm 0cm}]{icons/location.png}{#1}\hspace{0.8cm}
+\includegraphics[scale=0.25,trim={0cm 0.5cm -0.8cm 0cm}]{icons/email.png}{#2}\hspace{0.5cm}
 \includegraphics[scale=0.25,trim={0cm 0.5cm -0.8cm 0cm}]{icons/phone.png}{#3}\hspace{0.8cm}
 \includegraphics[scale=0.25,trim={0cm 0.5cm -0.8cm 0cm}]{icons/home.png}{#4}\hspace{0.8cm}
 }\parbox{\wd0}{\box0}\endgroup}

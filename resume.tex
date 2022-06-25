@@ -1,5 +1,6 @@
 \documentclass[]{resume}
 \usepackage{anyfontsize}
+\pagenumbering{gobble}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -9,9 +10,9 @@
 \namesection{Cameron}{Lenius}
 \separatorL
 \contactline
-  {\href{mailto:cameron.lenius@gmail.com}{cameron.lenius@gmail.com}}
   {Den Haag, Netherlands}
-  {416-770-2095}
+  {\href{mailto:cameron.lenius@gmail.com}{cameron.lenius@gmail.com}}
+  {+31 6 1385 1158}
   {\href{cmlenius.github.io}{cmlenius.github.io}}
 \separatorS
 
@@ -28,8 +29,8 @@
 \vspace{\topsep} % TODO fix this hack
 \separatorS
 \begin{tightemize}
-\item Founding employee of Kira Systems spin-off company, responsible for full life cycle of software delivery 
-\item Created Full-Stack SaaS web applications employing Go microservices and React frontend through which users can perform supervised learning for sequence labelling on legal documents and share their ML models with other users
+\item Started entirely new product through which users can perform supervised machine learning for sequence labelling on legal documents for automating contract analysis
+\item Responsible for full lifecycle of software delivery including implementation of UI (Typescript + React), backend services (Go), infrastructure (Kubernetes, Terraform), automated testing (Cypress), and CI/CD (Argo CD)
 \item Introduced Role Based Access Control combining Auth0's Management API and Hasura's GraphQL permissions
 \item Helped manage Azure Cloud infrastructure and deployments
 \end{tightemize}
@@ -40,10 +41,11 @@
 \location{Aug 2019 – Sept 2021 | Toronto, Canada}
 \separatorS
 \begin{tightemize}
-\item Contributed several important features to Kira's industry-leading Machine Learning based contract analysis product in Clojure + ClojureScript
-\item Started entirely new product used to assist lawyers in contract negotiation through automated contract analysis and review. Implemented UI (Typescript) and backend services (Go), as well as infrastructure (Kubernetes, Terraform), CI/CD (Argo CD), and automated testing
+\item Contributed several important features to Kira's industry-leading Machine Learning based contract analysis product in Golang, Typescript, and Clojure
+\item Developed backend microservices to facilitate document processing including application of OCR, text classification, and S3 cloud object storage
+\item Transitioned machine learning method from batch learning to online learning, significantly reducing training time and resource consumption
 \item Created CRM integration using the Salesforce REST API enabling the business to bill users accurately based on usage metrics
-\item Participated in key architectural decisions and schema reviews impacting all engineering teams as member of the Database Guild
+\item Participated in key architectural decisions as member of the Database Guild
 \end{tightemize}
 \separatorM
 
@@ -53,23 +55,31 @@
 \location{Sept 2017 – Dec 2017}
 \separatorS
 \begin{tightemize}
-\item Created the Morgue Log web application written in Clojure + ClojureScript, used in all UHN hospital morgues to ensure bodies are moved in a timely manner
-\item Lead development of the Clinical Portal application using re-frame and Reagent, granting hospital clinicians centralized access to patient results data for signoff
-\item Built custom features for the Discharge Summary web application, used hospital wide to significantly reduce the time required to discharge patients
-\item Implemented backend JSON-RPC services in Java using PostgresSQL databases
+\item Implemented JSON-RPC services in Java for the Clinical Portal, granting hospital clinicians centralized access to patient data, reducing patient discharge wait times by up to 50\%
+\item Created the Morgue Log application written in Clojure, used across all UHN hospital morgues to ensure bodies are moved in a timely manner
 \end{tightemize}
 \separatorM
 
 \describedsubsection{Emmetros Limited}
-\descript{| Mobile Developer }
+\descript{| Software Developer }
 \location{Jan 2018 – Apr 2018 | Waterloo, Canada}
 \separatorS
 \begin{tightemize}
-\item Implemented core features for iOS app using Swift in an Agile environment
-\item Integrated analytics tracking with Mixpanel and the Facebook SDK enabling the company to track key performance metrics of ads and features
-\item Tracked and fixed bugs in MEAN stack web application
+\item Implemented core features for iOS app using Swift along with analytics integration enabling the company to track key performance metrics
+\item Tracked and fixed bugs in MEAN stack application
 \end{tightemize}
-\separatorM
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\describedsubsection{Gloomhaven Card Browser}
+\location{( {\href{https://www.gloomhavencards.com}{www.gloomhavencards.com}} )}
+\separatorS
+\begin{tightemize}
+\item Creator and maintainer of the Gloomhaven Card Browser, a Next.js application used by thousands of players to browse cards from the popular board game Gloomhaven
+\end{tightemize}
  
 \end{minipage} 
 \hfill
@@ -93,8 +103,9 @@
 \section{Skills}
 \subsection{Languages}
 \separatorS
-\skillproficiency{English}{Native / Fluent}
+\skillproficiency{English}{Native}
 \skillproficiency{French}{Conversational}
+\skillproficiency{Dutch}{Beginner}
 \separatorL
  
 \subsection{Programming}
@@ -115,6 +126,7 @@
 \columnbreak
 \skill{React.js}
 \skill{Node.js}
+\skill{Next.js}
 \skill{Express.js}
 \skill{Reagent}
 \skill{re-frame}
@@ -139,6 +151,7 @@
 \skill{Terraform}
 \skill{Tilt}
 \skill{Github Actions}
+\skill{Vercel}
 \columnbreak
 \skill{Azure}
 \skill{AWS S3}
@@ -147,6 +160,7 @@
 \skill{MongoDB}
 \skill{Elasticsearch}
 \skill{Protobuf}
+\skill{Omnipage}
 \end{multicols}
 \separatorM
  
