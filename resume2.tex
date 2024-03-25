@@ -1,0 +1,164 @@
+\documentclass[]{resume2}
+\usepackage{anyfontsize}
+\pagenumbering{gobble}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Cameron}{Lenius}
+% \separatorL
+% \contactline
+%   {Den Haag, Netherlands}
+%   {\href{mailto:cameron.lenius@gmail.com}{cameron.lenius@gmail.com}}
+%   {+31 6 1385 1158}
+%   {\href{cmlenius.github.io}{cmlenius.github.io}}
+% \separatorS
+
+\begin{minipage}[t]{0.69\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY STATEMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Results-driven Software Engineer with 5+ years of experience developing backend and full-stack systems while shipping production quality software.
+% Quick learner with proven leadership abilities and strong communication skills
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% STAR: Situation, Task, Action, and Results
+% XYZ: Accomplished [X] as measured by [Y], by doing [Z]
+% CAR: Challenge Action Result
+% analyzed, architected, automated, built, created, decreased, designed, developed, implemented, improved, optimized, published, reduced, refactored
+
+
+\sectionFn{Work Experience}
+\experienceFn{Adyen}{Backend Software Engineer}{Sept 2023 – Present | Amsterdam, Netherlands}
+%\vspace{\topsep} % TODO fix this hack
+\separatorS
+\begin{tightemize}
+\item Created multi-threaded job which groups processed payment funds and sends them to merchants bank accounts
+\item Led development of the Cash Management model which mitigates foreign exchange exposure and liquidity issues by automating billions of dollars worth of daily foreign currency trades and bank transfers
+\item Reduced time required to Incident Impact Assesment tool 
+\item Resolved time sensitive incidents critical to success of company's business operations as part of on-call rotation
+\end{tightemize}
+\separatorM
+
+\experienceFn{Kira Systems | Zuva AI}{Fullstack Software Developer}{Aug 2019 – June 2022 | Toronto, Canada}
+\separatorS
+\begin{tightemize}
+\item Implemented Go/Clojure microservices to facilitate file processing including application of Optical Character Recognition, document classification, training, and S3 cloud object storage
+\item Built the Document Viewer, a complex React.js component which leverages OCR data to overlay images with highlightable text spans enabling users to create custom training sets
+\item Saved 1,000s of hours of computational resoures by transitioning machine learning method from offline to online learning, removing the need to retrain entire datasets
+\item Introduced Role Based Access Control combining Auth0's Node.js Management API's and Hasura's GraphQL permissions
+\item Created integration service using the Salesforce REST API to unify product and CRM users, enabling the business to bill clients accurately based on product usage
+% \item Implemented backend microservices pipeline in Go/Clojure to facilitate supervised machine learning for sequence labelling on legal documents
+% \item Responsible for full life cyle development of Kira's industry-leading AI based contract analysis product including design, implementation, containerization and deployement
+% \item Participated in product infrastructure design as well as conatinerization (Docker, Kubernetes and Terraform) and delpoyment (Azure, Argo CD)
+\end{tightemize}
+\separatorM
+
+\experienceFn{University Health Network}{Software Developer}{Sept 2018 – Aug 2019 | Toronto, Canada}
+\separatorS
+\begin{tightemize}
+\item Reduced patient discharge wait times by centralizing access to patient data for hosptial clinicians though JSON-RPC services written in Java
+\item Created the Morgue Log, a fullstack web-appliction written in Clojure/ClojureScript, used to notify staff across UHN hospital morgues when bodies require attention
+\end{tightemize}
+\separatorM
+
+\experienceFn{Emmetros Limited}{| Software Developer (Contract)}{Jan 2018 – Apr 2018 | Waterloo, Canada}
+\separatorS
+\begin{tightemize}
+\item Developed core features for iOS app using Swift along with analytics integration enabling the company to track key performance metrics
+\item Tracked and fixed bugs in MEAN stack application
+\end{tightemize}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionFn{Projects}
+\subsectionFn{Gloomhaven Card Browser}
+\locationFn{( {\href{https://www.gloomhavencards.com}{www.gloomhavencards.com}} )}
+\separatorS
+\begin{tightemize}
+\item Creator and maintainer of the Gloomhaven Card Browser, a Next.js web application visited by 1000s of unique users a day to browse cards from the popular board game Gloomhaven
+\end{tightemize}
+ 
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.28\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionFn{Education} 
+\subsectionFn{University of Waterloo}
+\descriptorFn{Bachelor's Computer Science}
+\locationFn{2014 - 2018 | Waterloo, Canada}
+%\minorFn{Minor in Combinatorics and Optimization}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\separatorM
+\sectionFn{Skills}
+\subsectionFn{Programming} \\
+\skillproficiencyFn{SQL}{Proficient}
+\skillproficiencyFn{Java}{Proficient}
+\skillproficiencyFn{Typescript}{Proficient}
+\skillproficiencyFn{Clojure}{Proficient}
+\skillproficiencyFn{Go}{Proficient}
+\skillproficiencyFn{Swift}{Familiar}
+\skillproficiencyFn{Python}{Familiar}
+\skillproficiencyFn{C/C++}{Familiar}
+\separatorM
+ 
+\subsectionFn{Libraries / Frameworks}
+\begin{multicols}{2}
+\skillFn{Spring}
+\skillFn{Jersey}
+\skillFn{MyBatis}
+\skillFn{Auth0 API}
+\skillFn{Salesforce API}
+\columnbreak
+\skillFn{GraphQL}
+\skillFn{React.js}
+\skillFn{Node.js}
+\skillFn{Express.js}
+\skillFn{Next.js}
+\skillFn{Reagent}
+\end{multicols}
+\separatorM
+ 
+\subsectionFn{Tools / Technologies}
+\begin{multicols}{2}
+\skillFn{Docker}
+\skillFn{Kubernetes}
+\skillFn{Minkube}
+\skillFn{Terraform}
+\skillFn{Tilt}
+\skillFn{Azure}
+\skillFn{AWS S3}
+\skillFn{Gradle}
+\columnbreak
+\skillFn{PostgreSQL}
+\skillFn{MongoDB}
+\skillFn{Elasticsearch}
+\skillFn{RabbitMQ}
+\skillFn{Hasura}
+\skillFn{OAuth2}
+\skillFn{OpenID}
+\skillFn{Grafana}
+\end{multicols}
+\separatorM
+ 
+\end{minipage} 
+\end{document}  
+\documentclass[]{article}
+
