@@ -1,0 +1,183 @@
+\documentclass[]{resume}
+\usepackage{anyfontsize}
+\pagenumbering{gobble}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titleFn{Cameron}{Lenius}
+%\contactLineFn
+%  {\href{mailto:cameron.lenius@gmail.com}{cameron.lenius@gmail.com}}
+%  {+31 6 1385 1158}
+%  {\href{cmlenius.github.io}{cmlenius.github.io}}
+%\separatorM
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY STATEMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Results-driven Software Engineer with 5+ years of experience developing backend and full-stack systems while shipping production quality software.
+% Quick learner with proven leadership abilities and strong communication skills
+
+\begin{minipage}[t]{0.69\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% STAR: Situation, Task, Action, and Results
+% XYZ: Accomplished [X] as measured by [Y], by doing [Z]
+% CAR: Challenge Action Result
+% analyzed, architected, automated, built, created, decreased, designed, developed, implemented, improved, optimized, published, reduced, refactored
+
+
+\sectionFn{Work Experience}
+\separatorLine
+\experienceFn{Adyen}{Java Software Engineer}{Sept 2023 – Present}{Amsterdam, Netherlands}
+\separatorS
+\begin{tightemize}
+\item Led team of engineers to create the Cash Management model which mitigates foreign exchange exposure and liquidity risks by forecasting bank balance changes and automating billions of dollars worth of daily foreign currency trades and bank transfers
+\item Developed multi‑threaded job which continuously groups processed payment funds and performs necessary risk assesment and bank account validations before delivering money to clients on schedule 99.8\% of the time
+\item Architected tool to drastically speed up the assesment of incidents giving business operations teams quick and detailed information about delayed payments to ensure fast communication with affected clients
+\item Resolved extremely time sensitive incidents critical to success of the company's business operations as part of on‑call rotation
+\end{tightemize}
+\separatorM
+
+\experienceFn{Zuva AI (formerly Kira Systems)}{Intermediate Software Developer}{Aug 2019 – June 2022}{Toronto, Canada}
+\separatorS
+\begin{tightemize}
+\item Implemented, containerized, and deployed microservices in Go and Clojure to facilitate file processing pipeline for Kira’s industry‑leading Machine Learning based contract analysis product by applying Optical Character Recognition, document classification, training, and Amazon S3 cloud object storage
+\item Built the Document Viewer, a complex React.js component which leverages Optical Character Recognition data to overlay images with highlightable text spans enabling users to annotate custom training sets for machine learning
+\item Saved 1,000s of hours of computational resoures by transitioning machine learning method from offline to online learning, removing the need to retrain entire datasets
+\item Introduced Role Based Access Control combining Auth0's Node.js Management API's and Hasura's GraphQL permissions
+\item  Unified product and CRM users using the Salesforce REST API, enabling the business to bill clients accurately based on product usage
+\end{tightemize}
+\separatorM
+
+\experienceFn{University Health Network}{Software Developer}{Sept 2018 – Aug 2019}{Toronto, Canada}
+\separatorS
+\begin{tightemize}
+\item Created the Morgue Log, a fullstack web‑appliction written in Clojure/ClojureScript, used by staff across UHN hospital morgues to keep track of corpses and send notifications when bodies require attention
+\item Reduced patient discharge wait times by creating JSON‑RPC services to centralize patient data for hosptial clinicians to sign‑off on
+\end{tightemize}
+\separatorM
+
+\experienceFn{Emmetros Limited}{Software Developer (Contract)}{Jan 2018 – Apr 2018}{Waterloo, Canada}
+\separatorS
+\begin{tightemize}
+\item Integrated analytics for iOS app using Swift enabling company to track key performance metrics to lead business decisions
+\item Tracked and fixed bugs in MEAN stack application
+\end{tightemize}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionFn{Projects}
+\separatorLine
+\subsectionFn{Gloomhaven Card Browser} \hfill \minorFn{\href{https://www.gloomhavencards.com}{www.gloomhavencards.com}}
+\separatorS
+\begin{tightemize}
+\item Creator and maintainer of a Next.js web application used to browse content from the popular board game Gloomhaven
+\item 1st ranked page on google search, visited by 1000+ unique users daily around the world
+\end{tightemize}
+ 
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.28\textwidth} 
+   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CONTACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   
+\sectionFn{Contact}
+\separatorLine
+\contactSectionFn{\href{mailto:cameron.lenius@gmail.com}{cameron.lenius@gmail.com}}{+31 6 1385 1158}{\href{cmlenius.github.io}{cmlenius.github.io}}
+\separatorM
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionFn{Education} 
+\separatorLine
+\subsectionFn{University of Waterloo}
+\descriptorFn{Bachelor's Computer Science} \\
+\minorFn{2014 - 2018 | Waterloo, Canada} \\
+Minor Combinatorics and Optimization
+\separatorS
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionFn{Skills}
+\separatorLine
+\subsectionFn{Programming}
+\separatorN
+\begin{multicols}{2}
+\skillFn{SQL}
+\skillFn{Java}
+\skillFn{Typescript}
+\skillFn{Clojure}
+\skillFn{Go}
+\skillFn{Swift}
+\skillFn{Python}
+\skillFn{C/C++}
+\columnbreak
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Familiar}
+\skillProficiencyFn{Familiar}
+\skillProficiencyFn{Familiar}
+\end{multicols}
+\separatorM
+ 
+\subsectionFn{Libraries / Frameworks}
+\separatorN
+\begin{multicols}{2}
+\skillFn{Spring}
+\skillFn{Jersey}
+\skillFn{MyBatis}
+\skillFn{Auth0 API}
+\skillFn{Salesforce API}
+\columnbreak
+\skillFn{GraphQL}
+\skillFn{React.js}
+\skillFn{Node.js}
+\skillFn{Express.js}
+\skillFn{Next.js}
+\end{multicols}
+\separatorM
+ 
+\subsectionFn{Tools / Technologies}
+\separatorN
+\begin{multicols}{2}
+\skillFn{Docker}
+\skillFn{Kubernetes}
+\skillFn{Minkube}
+\skillFn{Terraform}
+\skillFn{Tilt}
+\skillFn{Azure}
+\skillFn{AWS S3}
+\skillFn{Gradle}
+\columnbreak
+\skillFn{PostgreSQL}
+\skillFn{MongoDB}
+\skillFn{Elasticsearch}
+\skillFn{RabbitMQ}
+\skillFn{Hasura}
+\skillFn{OAuth2}
+\skillFn{OpenID}
+\skillFn{Grafana}
+\end{multicols}
+ 
+\end{minipage} 
+\end{document}  
+\documentclass[]{article}
+
