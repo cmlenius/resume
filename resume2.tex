@@ -1,0 +1,189 @@
+\documentclass[]{resume}
+\usepackage{anyfontsize}
+\pagenumbering{gobble}
+\setlist[itemize]{leftmargin=10pt}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\titleFn{Cameron}{Lenius}
+\separatorM
+
+\contactLineFn
+  {647-366-8715}
+  {cameron.lenius@gmail.com}
+  {\href{https://www.github.com/cmlenius}{github.com/cmlenius}}
+   
+\separatorL
+\summaryFn{Canadian citizen with 6+ years of experience developing backend and full-stack systems looking to move back to Toronto}
+\separatorN
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% STAR: Situation, Task, Action, and Results
+% XYZ: Accomplished [X] as measured by [Y], by doing [Z]
+% CAR: Challenge Action Result
+
+\sectionFn{Work Experience}
+\experienceFnTwo{Adyen}{Backend Software Engineer}{Sept 2022 – Present}{Amsterdam, Netherlands}
+\begin{tightemize}
+\item Developed multithreaded jobs and Java REST APIs on top of large-scale 400+ TB PostgreSQL databases, contributing to the continuous delivery of over a trillion processed payments to merchants in over 100 countries
+\item Minimized foreign exchange exposure and liquidity risks by automating billions of dollars of daily forex trades using an event stream consumer to predict cash flows
+\item Managed cross-team project to centralize merchant bank account details and validation leading to a 5\% reduction in payout incidents
+\item Led top hackathon project to live product release ensuring communication with affected clients within 15 minutes of an incident by implementing a feedback loop that tracks underlying alert data until resolution
+\item Resolved time-sensitive incidents critical to business operations while on-call
+\end{tightemize}
+\separatorM
+
+\experienceFnTwo{Zuva AI (formerly Kira Systems)}{Intermediate Software Developer}{Aug 2019 – June 2022}{Toronto, Canada}
+\begin{tightemize}
+\item Implemented Go and Clojure microservice pipeline to facilitate AI contract analysis including Docker containerization and Kubernetes deployment to Azure Cloud
+\item Built a complex React (Typescript) component that leverages optical character recognition data to overlay images with highlightable text spans, enabling users to annotate training sets for custom model training
+\item Transitioned machine learning training method from offline to online learning, eliminating the need to retrain entire datasets, reducing computational resources
+\item Introduced Role Based Access Control combining Auth0's Node.js Management API and Hasura's GraphQL permissions
+\item Unified product and CRM users using the Salesforce REST API allowing the business to bill clients based on product usage
+\end{tightemize}
+\separatorM
+
+\experienceFnTwo{University Health Network}{Full Stack Software Developer}{Sept 2018 – Aug 2019}{Toronto, Canada}
+\begin{tightemize}
+\item Created Java microservices to centralize patient data from MongoDB databases for clinician use, improving patient care efficiency by reducing discharge wait times
+\item Designed and implemented a Clojure/ClojureScript web application used by hospital morgues to track corpses and receive email notifications for bodies require attention
+\end{tightemize}
+\separatorM
+
+\experienceFnTwo{Emmetros Limited}{Mobile Developer}{Jan 2018 – Apr 2018}{Waterloo, Canada}
+\begin{tightemize}
+\item Designed and implemented iPhone UI for Swift iOS app, analytics integration and Express.js routing for Node.js backend
+\end{tightemize}
+\separatorS
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionFn{Projects}
+\subsectionFn{\href{https://www.gloomhavencards.com}{www.gloomhavencards.com}} \hfill \minorFn{\href{https://www.github.com/cmlenius/gloomhaven-card-browser}{github.com/cmlenius}}
+\begin{tightemize}
+\item NextJS (Typescript) webapp, ranked \#1 on Google search with 2,700,000 page views from 120,000 unique users over the past year
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.28\textwidth} 
+   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CONTACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   
+%\sectionFn{Contact}
+%\contactSectionFn
+%  {\href{mailto:cameron.lenius@gmail.com}{cameron.lenius@gmail.com}}
+%  {416-770-2095}
+%  {Relocating back to Toronto}
+%\separatorS
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionFn{Education} 
+\subsectionFn{University of Waterloo} \\
+\minorFn{Bachelor's Computer Science} \\
+\minorFn{Sept 2014 - Aug 2018} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\sectionFn{Skills}
+
+\subsectionFn{Programming}
+\separatorN
+\begin{multicols}{2}
+\skillFn{Java}
+\skillFn{Typescript}
+\skillFn{Javascript}
+\skillFn{Clojure}
+\skillFn{Go}
+\skillFn{SQL}
+\skillFn{HTML/CSS}
+\skillFn{Swift}
+\skillFn{Python}
+\skillFn{C/C++}
+\columnbreak
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Proficient}
+\skillProficiencyFn{Familiar}
+\skillProficiencyFn{Familiar}
+\skillProficiencyFn{Familiar}
+\end{multicols}
+\separatorS
+ 
+\subsectionFn{Libraries / Frameworks}
+\separatorN
+\begin{multicols}{2}
+\skillFn{Spring}
+\skillFn{MyBatis}
+\skillFn{Struts}
+\skillFn{Jersey}
+\skillFn{Mockito}
+\skillFn{JUnit}
+\columnbreak
+\skillFn{Node.js}
+\skillFn{Express.js}
+\skillFn{React.js}
+\skillFn{Next.js}
+\skillFn{Reagent}
+\skillFn{GraphQL}
+\end{multicols}
+\separatorS
+ 
+\subsectionFn{Tools / Technologies}
+\separatorN
+\begin{multicols}{2}
+\skillFn{Docker}
+\skillFn{Kubernetes}
+\skillFn{Gradle}
+\skillFn{Maven}
+\skillFn{Azure}
+\skillFn{AWS S3}
+\skillFn{Elasticsearch}
+\columnbreak
+\skillFn{PostgreSQL}
+\skillFn{MongoDB}
+\skillFn{Kafka}
+\skillFn{RabbitMQ}
+\skillFn{Hasura}
+\skillFn{OAuth2}
+\skillFn{OpenID}
+\end{multicols}
+ 
+\subsectionFn{Languages}
+\separatorN
+\begin{multicols}{2}
+\skillFn{English}
+\skillFn{French}
+\columnbreak
+\skillProficiencyFn{Naitive}
+\skillProficiencyFn{Conversational}
+\end{multicols}
+\separatorS
+ 
+\end{minipage} 
+\end{document}  
+\documentclass[]{article}

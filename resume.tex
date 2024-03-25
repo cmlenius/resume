@@ -1,174 +1,100 @@
 \documentclass[]{resume}
 \usepackage{anyfontsize}
 \pagenumbering{gobble}
+\setlist[itemize]{leftmargin=20pt}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     TITLE
+%     HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\namesection{Cameron}{Lenius}
-\separatorL
-\contactline
-  {Den Haag, Netherlands}
-  {\href{mailto:cameron.lenius@gmail.com}{cameron.lenius@gmail.com}}
-  {+31 6 1385 1158}
-  {\href{cmlenius.github.io}{cmlenius.github.io}}
+ 
+\titleFn{Cameron}{Lenius}
 \separatorS
-
-\begin{minipage}[t]{0.65\textwidth} 
-
+ 
+\contactLineFn
+  {647-366-8715}
+  {cameron.lenius@gmail.com}
+  {\href{https://www.github.com/cmlenius}{github.com/cmlenius}}
+   
+\separatorL
+\summaryFn{Canadian citizen with 6+ years of experience developing backend and full-stack systems looking to move back to Toronto}
+\separatorN
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SUMMARY STATEMENT
+%     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Results-driven Software Engineer with 5+ years of experience developing backend and full-stack systems while shipping production quality software.
-% Quick learner with proven leadership abilities and strong communication skills
-
+ 
+\sectionFn{Skills} 
+\noindent\begin{tabular}{@{}l@{}l@{}}
+\skillLabelFn{Programming:} & Java, Typescript, Javascript, Clojure, Go, Swift, SQL, HTML, CSS, Bash \\
+\separatorS
+\skillLabelFn{Frameworks:} & Spring, MyBatis, Jersey, Struts, Node.js, Next.js, React.js, Reagent, GraphQL \\
+\separatorS
+\skillLabelFn{Technologies:} & Docker, Kubernetes, Azure, AWS S3, PostgreSQL, MongoDB, Hasura, Kafka, RabbitMQ, PagerDuty \\
+\end{tabular}
+\separatorS
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Work Experience}
-\describedsubsection{Zuva AI}
-\descript{| Intermediate Software Developer}
-\location{Sept 2021 – June 2022 | Toronto, Canada}
-\vspace{\topsep} % TODO fix this hack
-\separatorS
-\begin{tightemize}
-\item Started entirely new product through which users can perform supervised machine learning for sequence labelling on legal documents for contract analysis
-\item Participated in product infrastructure design as well as conatinerization (Docker, Kubernetes and Terraform) and delpoyment (Azure, Argo CD)
-\item Implemented Go microservices to facilitate file processing including application of OCR, document classification, training, and S3 cloud object storage
-\item Introduced Role Based Access Control combining Auth0's Management API (Node.js, Typescript) and Hasura's GraphQL permissions
-\end{tightemize}
-\separatorM
-
-\describedsubsection{Kira Systems}
-\descript{| Intermediate Software Developer }
-\location{Aug 2019 – Sept 2021 | Toronto, Canada}
-\separatorS
-\begin{tightemize}
-\item Contributed several important features to Kira's industry-leading Machine Learning based contract analysis product (Go, Clojure, Typescript)
-\item Implemented the Document Viewer, a complex React.js component used to annotate documents for the creation of machine learning training sets
-\item Transitioned machine learning method from offline to online learning removing the need to retrain entire datasets and saving 1000s of hours of computational resources
-\item Created integration service using the Salesforce REST API, unifying product and CRM users while enabling the business to bill clients accurately based on product usage
-\end{tightemize}
-\separatorM
-
-\describedsubsection{University Health Network}
-\descript{| Software Developer }
-\location{Sept 2018 – Aug 2019 | Toronto, Canada}
-\separatorS
-\begin{tightemize}
-\item Created the Morgue Log application (Clojure/ClojureScript), used to notify staff across UHN hospital morgues when bodies require attention
-\item Developed backend JSON-RPC services (Java) granting hospital clinicians centralized access to patient data, reducing discharge wait times by up to 50\%
-\end{tightemize}
-\separatorM
-
-\describedsubsection{Emmetros Limited}
-\descript{| Software Developer }
-\location{Jan 2018 – Apr 2018 | Waterloo, Canada}
-\separatorS
-\begin{tightemize}
-\item Developed core features for iOS app using Swift along with analytics integration enabling the company to track key performance metrics
-\item Tracked and fixed bugs in MEAN stack application
-\end{tightemize}
+% STAR: Situation, Task, Action, and Results
+% XYZ: Accomplished [X] as measured by [Y], by doing [Z]
+% CAR: Challenge Action Result
  
+\sectionFn{Work Experience}
+\experienceFn{Adyen}{Backend Software Engineer}{Sept 2022 – Present}{Amsterdam, NL}
+\begin{tightemize}
+\item Developed multithreaded jobs and Java REST APIs on top of large-scale 400+ TB PostgreSQL databases, contributing to the continuous delivery of over a trillion processed payments to merchants in more than 100 countries
+\item Minimized foreign exchange exposure and liquidity risks by implementing algorithm to automate 1,000,000,000s of dollars worth of daily forex trades using an event stream consumer to continuously predict bank balance changes
+\item Managed cross-team project to centralize merchant bank account details and validation by identifying actionable tasks, delegating responsibility, and introducing integration testing, leading to a reduction in payout incidents
+\item Led top hackathon project to live product release ensuring communication with affected clients within 15 minutes of an incident by implementing a feedback loop that tracks underlying alert data until resolution
+\item Ensured quality and availability of services by advocating for higher component test coverage and system checks
+\item Resolved time-sensitive incidents critical to business operations in a high-stress environment as part of on-call rotation
+\end{tightemize}
+\separatorL
+
+\experienceFn{Zuva AI (formerly Kira Systems)}{Intermediate Software Developer}{Aug 2019 – June 2022}{Toronto, CA}
+\begin{tightemize}
+\item Implemented Go and Clojure microservices to facilitate AI contract analysis including text tokenization, document classification, model training, AWS S3 storage, Docker containerization and Kubernetes deployment to Azure Cloud
+\item Built a complex React (Typescript) component that leverages optical character recognition data to overlay images with highlightable text spans, enabling users to annotate training sets for custom model training
+\item Transitioned machine learning training method from offline to online learning, eliminating the need to retrain entire datasets, saving 1000s of hours of computational resources
+\item Introduced Role Based Access Control combining Auth0's Node.js Management API and Hasura's GraphQL permissions
+\item Unified product and CRM users using the Salesforce REST API allowing billing clients based on product usage
+\end{tightemize}
+\separatorL
+
+\experienceFn{University Health Network}{Full Stack Software Developer}{Sept 2018 – Aug 2019}{Toronto, CA}
+\begin{tightemize}
+\item Designed and implemented a Clojure/ClojureScript web application used across all UHN hospital morgues, enabling real-time tracking of corpses and automated email notifications when bodies require attention
+\item Created Java microservices to centralize patient data from MongoDB databases for clinicians to sign off on, directly impacting patient care efficiency by reducing discharge wait times
+\end{tightemize}
+\separatorL
+
+\experienceFn{Emmetros Limited}{Contract Mobile Developer}{Jan 2018 – Apr 2018}{Waterloo, CA}
+\begin{tightemize}
+\item Designed and implemented iPhone UI for Swift iOS app, analytics integration and Express.js routing for Node.js backend
+\end{tightemize}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Projects
+%     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Projects}
-\describedsubsection{Gloomhaven Card Browser}
-\location{( {\href{https://www.gloomhavencards.com}{www.gloomhavencards.com}} )}
-\separatorS
+\sectionFn{Projects}
+\subsectionFn{\href{https://www.gloomhavencards.com}{www.gloomhavencards.com}} \hfill \minorFn{\href{https://www.github.com/cmlenius/gloomhaven-card-browser}{github.com/cmlenius/gloomhaven-card-browser}}
 \begin{tightemize}
-\item Creator and maintainer of the Gloomhaven Card Browser, a Next.js application used by thousands of players to browse cards from the popular board game Gloomhaven
+\item Ranked \#1 on Google search with 2,700,000 page views from 120,000 unique users over the past year
+\item NextJS webapp used by members of the community to browse content from the popular board game Gloomhaven
 \end{tightemize}
  
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.3\textwidth} 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
-\subsection{University of Waterloo}
-\descript{Bachelor's in Computer Science}
-\location{Sept 2014 - Aug 2018 | Waterloo, Canada}
-\minor{Minor in Combinatorics and Optimization}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\separatorM
-\section{Skills}
-\subsection{Languages}
-\separatorS
-\skillproficiency{English}{Native}
-\skillproficiency{French}{Conversational}
-\skillproficiency{Dutch}{Beginner}
-\separatorL
+\sectionFn{Education} 
+\educationFn{University of Waterloo}{Bachelor of Computer Science}{Sept 2014 – Aug 2018}
  
-\subsection{Programming}
-\separatorS
-\skillproficiency{SQL}{Proficient}
-\skillproficiency{Typescript}{Proficient}
-\skillproficiency{Go}{Proficient}
-\skillproficiency{Clojure}{Proficient}
-\skillproficiency{Java}{Proficient}
-\skillproficiency{Swift}{Familiar}
-\skillproficiency{Python}{Familiar}
-\skillproficiency{C/C++}{Familiar}
-\separatorL
- 
-\subsection{Libraries / Frameworks}
-\separatorS
-\begin{multicols}{2}
-\columnbreak
-\skill{React.js}
-\skill{Node.js}
-\skill{Express.js}
-\skill{Next.js}
-\skill{Reagent}
-\skill{Cypress}
-\columnbreak
-\skill{GraphQL}
-\skill{Argo CD}
-\skill{Auth0 API}
-\skill{Salesforce API}
-\skill{Material-UI}
-\skill{Posthog}
-\end{multicols}
-\separatorL
- 
-\subsection{Tools / Technologies}
-\separatorS
-\begin{multicols}{2}
-\skill{Git}
-\skill{Docker}
-\skill{Kubernetes}
-\skill{Minkube}
-\skill{Terraform}
-\skill{Tilt}
-\skill{Github Actions}
-\skill{AWS S3}
-\columnbreak
-\skill{Azure}
-\skill{PostgresSQL}
-\skill{MongoDB}
-\skill{Elasticsearch}
-\skill{RabbitMQ}
-\skill{Hasura}
-\skill{OAuth2}
-\skill{OpenID}
-\end{multicols}
-\separatorM
- 
-\end{minipage} 
 \end{document}  
 \documentclass[]{article}
-
+ 
+ 
